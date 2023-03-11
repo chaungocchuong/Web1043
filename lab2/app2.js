@@ -7,7 +7,7 @@ c=parseInt(prompt("moi nhap vao c"));
 let delta =b*b-4*a*c;
 let x1, x2;
 if(delta ==0){
-    x1=x2 = -b/2*a;
+    x1=x2 = -b/(2 * a);
     alert(`phuong trinh co nghiem la ${x1}`);
 }
 else if (delta < 0){
