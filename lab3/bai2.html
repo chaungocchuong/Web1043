@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var chon = parseInt(prompt("chon 1 (cong), chon 2 de (tru), chon 3 de (nhan), chon 4 de chia"));
+        let a = parseInt(prompt("nhap a: "));
+        let b = parseInt(prompt("nhap b: "));
+        
+        switch(chon)
+        {
+            case 1: let c = a+b;
+            alert(`phep cong cho ra ket qua : ${c}`);
+                break;
+            case 2: let d = a-b;
+            alert(`phep tru cho ra ket qua la: ${d}`);
+                break;
+            case 3: let e = a*b;
+            alert(`phep nhan cho ra ket qua la: ${e}`);
+                break;
+            case 4: let f = a/b;
+            alert(`phep chia cho ra ket qua la: ${f}`);
+                break;
+        }
+    </script>
+</body>
+</html>
