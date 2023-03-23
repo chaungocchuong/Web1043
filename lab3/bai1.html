@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function diemtrungbinhIFE()
+        {
+            let toan = parseFloat(prompt("moi ban nhap vao diem toan: "));
+            let hoa = parseFloat(prompt("moi ban nhap vao diem hoa: "));
+            let sinh = parseFloat(prompt("moi bna nhap vao diem sinh: "));
+            let ly = parseFloat(prompt("moi ban nhap vao diem ly: "));
+
+            if (toan>=0&&toan<=10&&hoa>=0&&hoa<=10&&sinh>=0&&sinh<=10&&ly>=0&&ly<=10)
+            {
+                let diemtb = (toan+hoa+sinh+ly)/4
+                if (diemtb<5)
+                {
+                    console.log(`diem toan cua ban la :${toan}, diem hoa cua ban la : ${hoa}, diem sinh cua ban la ${sinh}, diem ly cua ban la ${ly},`);
+                    alert(`diem trung binh cua ban la ${diemtb}  BAN DA DUOC XEP LOAI YEU`);
+                }
+                if (diemtb>=5&&diemtb<7)
+                {
+                    console.log(`diem toan cua ban la :${toan}, diem hoa cua ban la : ${hoa}, diem sinh cua ban la ${sinh}, diem ly cua ban la ${ly},`);
+                    alert(`diem trung binh cua ban la ${diemtb} BAN DA DUOC XEP LOAI TRUNG BINH`);
+                }
+                if (diemtb>=7&&diemtb<9)
+                {
+                    console.log(`diem toan cua ban la :${toan}, diem hoa cua ban la : ${hoa}, diem sinh cua ban la ${sinh}, diem ly cua ban la ${ly},`);
+                    alert(`diem trung binh cua ban la ${diemtb} BAN DA DUOC XEP LOAI KHA`);
+                }
+                if (diemtb>9&&diemtb<=10)
+                {
+                    console.log(`diem toan cua ban la :${toan}, diem hoa cua ban la : ${hoa}, diem sinh cua ban la ${sinh}, diem ly cua ban la ${ly},`);
+                    alert(`diem trung binh cua ban la ${diemtb} BAN DA DUOC XEP LOAI GIOI`);
+                }
+            }
+            else 
+            {
+                alert("NGUOI NHAP BI NGAO :] <3");
+            }
+        }
+        function diemtrungbinhswc()
+        {
+         let diemly = parseFloat(prompt("moi ban nhap  vao diem ly: "));
+         let diemtoan = parseFloat(prompt("moi ban nhap  vao diem toan: "));
+         let diemhoa = parseFloat(prompt("moi ban nhap  vao diem hoa: "));
+         let diemsinh = parseFloat(prompt("moi ban nhap  vao diem sinh: "));
+         
+         if(diemtoan<0||diemtoan>10||diemly<0||diemly>10||diemhoa<0||diemhoa>10||diemsinh<0||diemsinh>10)
+         {
+           prompt("BU DA CHAC LUON :]");
+         }
+         let tinhdiemtb= (diemtoan+diemhoa+diemly+diemsinh)/4
+         let xeploai;
+         //
+         switch(true)
+         {
+            case tinhdiemtb>=0&&tinhdiemtb<5:
+            xeploai = " yeu ";
+            alert(`diem trung binh cua ban la ${tinhdiemtb} ban xep loai${xeploai}`);
+              break;
+            case tinhdiemtb>=5&&tinhdiemtb<7:
+            xeploai = " trung binh ";
+            alert(`diem trung binh cua ban la ${tinhdiemtb} ban xep loai${xeploai}`);
+              break
+            case tinhdiemtb>=7&&tinhdiemtb<9:
+            xeploai = " kha ";
+            alert(`diem trung binh cua ban la ${tinhdiemtb} ban xep loai${xeploai}`);
+              break;
+            case tinhdiemtb>=9&&tinhdiemtb<=10:
+            xeploai = " gioi ";
+            alert(`diem trung binh cua ban la ${tinhdiemtb} ban xep loai${xeploai}`);
+            break;
+            
+         }
+           
+        }
+        let chon=parseInt(prompt("ban muon tinh diem trung binh bang cach nao(1:IF/2:sWitch): "));
+        
+        
+        while(true){
+    
+        switch(chon)
+        {
+            case 1: alert("tinh diem trung binh va xep loai bang if,eles"); 
+                diemtrungbinhIFE();
+                break;
+            case 2 :alert ("tinh diem tring binh va xep loai bang SWC");
+                diemtrungbinhswc();
+                break;
+            default:
+                alert("da nay re ko anh ban :]");        
+        }
+    }
+
+    </script>
+</body>
+</html>
