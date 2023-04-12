@@ -115,6 +115,7 @@
             if (inputName.value.length < 5) {
                 btnAdd.disabled = true;
                 btnAdd.classList.add("btn-disabled");
+                
             } else {
                 btnAdd.classList.remove("btn-disabled");
                 btnAdd.disabled = false;
@@ -137,6 +138,7 @@
                 // create row
                 let row = document.createElement("div");
                 row.classList.add("row");
+
 
                 // create name
                 let name = document.createElement("input");
