@@ -149,7 +149,7 @@ body{
     bottom: 340px;
     left: 110px;
   }
-  .img3{
+ .img3{
     height: 130px;
     width: 400px;
     position: relative;
@@ -237,16 +237,24 @@ body{
      background-color: aqua;
      box-shadow: 0 0 10px ;
      padding: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
   }
   #box1,#box2,#box3,#box4,#box5{
-    border: 2px solid #8befd8;
-    box-shadow: 0 0 10px;
-    width: 150px;
-    height: 40px;
-    background-color: #fff;
-    color: black;
-    margin-top: 20px;
-    text-align: center;
+    display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
   }
   #box1:hover{
     background-color: black;
@@ -273,54 +281,8 @@ body{
     color: #fff;
     border: 4px solid #79eabb;
   }
-  #login-form {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-  }
   
-  label {
-    display: inline-block;
-    width: 100px;
-    text-align: left;
-  }
   
-  input[type="text"],
-  input[type="password"] {
-    width: 200px;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  input[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-  #button{
-    width: 70px;
-    height: 40px;
-    background-color: #4CAF50;
-    color: #fff;
-    position: relative;
-    bottom: 2520px;
-    left: 1300px;
-  }
   .gt{
     position: relative;
     bottom: 900px;
@@ -340,4 +302,143 @@ body{
     left: 770px;
   }
   
+  .login-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
   
+  .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .login-form {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  
+  /* Rest of the CSS styles for the login form */
+  
+  .shadow {
+    box-shadow: 5px 5px 10px #888888;
+  }
+  .ngt0 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  footer{
+
+   height: 140px;
+   background-color: #2222;
+   padding-left: 10px;
+   margin-left: 10px;
+  
+  }
+  .ft1{
+    height: 120px;
+  }
+  .ft01{
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+  }
+ 
+  .ft02{
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    padding-left: 30px;
+  }
+  .ft03{
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    padding-left: 30px;
+  }
+  .ft03 a{
+    text-align:center;
+    text-decoration: dotted;
+    color: blue;
+    padding-left: 30px;
+  }
+  .end{
+    height: 190px;
+    background-color: chocolate;
+    padding-top: 20px;
+    position: relative;
+    left: 10px;
+  }
+  .end div{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+  }
+  #imj{
+    position: relative;
+    top: 60px;
+    right: 520px;
+   
+  }
+ 
+
+ 
+    

@@ -69,19 +69,19 @@
     }
     </script>
   <nav class="n">
-     <a href="#" >TRANG CHỦ</a>
-     <a href="#">SALE OFF</a>
-     <a href="#">TIN TỨC</a>
-     <a href="#">GIỚI THIỆU</a>
-     <a href="#">HỖ TRỢ</a>
+     <a href="#" class="ngt0">TRANG CHỦ</a>
+     <a href="#" class="ngt">SALE OFF</a>
+     <a href="#" class="ngt1">TIN TỨC</a>
+     <a href="#" class="ngt2">GIỚI THIỆU</a>
+     <a href="#" class="ngt3">HỖ TRỢ</a>
      <a href="#">LIÊN HỆ</a>
   </nav>
   <div class="l">
-    <div id="box1">TOP BÁN CHẠY</div>
-    <div id="box2">SẢN PHẨM CỦA LINING</div>
-    <div id="box3">SẢN PHẨM CỦA YONEX</div>
-    <div id="box4">SẢN PHẨM CỦA VICTOR</div>
-    <div id="box5">SẢNG PHẨM CỦA MIZUNO</div>
+    <a href="#" id="box1">TOP BAN CHAY</a>
+    <a href="#" id="box2">SAN PHAM CUA LINING</a>
+    <a href="#" id="box3">SANG PHAM CUA Yonex</a>
+    <a href="#" id="box4">SAN PHAM CUA VICTOR</a>
+    <a href="#" id="box5">SANG PHAM CUA MIZUNO</a>
   </div>
   <div>
     <span class="sp1">SALE OFF</span>
@@ -127,52 +127,151 @@
       Đối với nhân viên: Xây dựng môi trường làm việc chuyên nghiệp, năng động, sáng tạo và nhân văn; tạo điều kiện thu nhập cao và cơ hội phát triển công bằng cho tất cả nhân viên.
       
       Đối với xã hội: Hài hòa lợi ích doanh nghiệp với lợi ích xã hội; đóng góp tích cực vào các hoạt động hướng về cộng đồng, thể hiện tinh thần trách nhiệm công dân và niềm tự hào dân tộc.</li>
-      <button id="button">login</button>
+      <button class="login-btn" onclick="scrollToLoginForm()">Login</button>
+      <div class="login-form">
+        <h2>Login</h2>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+          <button type="submit" id="login-btn">Login</button>
+        </form>
+      </div>
+      <footer>
+        <div class="ft1">
+         <li class="ft01">THÔNG TIN CHUNG
+          VNB Sports là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp
+          
+          Với sứ mệnh: "VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."
+          
+          Tầm nhìn: "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam</li>
+          <li class="ft02">
+            THÔNG TIN LIÊN HỆ
+Hệ thống cửa hàng: 56 cửa hàng trên toàn quốc
+Xem tất cả các cửa hàng VNB
 
-   <div id="login-section">
-    <form id="login-form">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      <br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      <br>
-      <input type="submit" value="Login">
-    </form>
-  </div>
-    <script>
-      document.getElementById("login-button").addEventListener("click", function() {
-  // Tìm vị trí của phần đăng nhập bằng ID hoặc class
-  const loginSection = document.getElementById("login-section") || document.getElementsByClassName("login-section")[0];
-
-  // Kiểm tra xem phần đăng nhập có tồn tại không
-  if (loginSection) {
-    // Cuộn trang web đến phần đăng nhập bằng cách sử dụng thuộc tính scrollTop
-    window.scrollTo({
-      top: loginSection.offsetTop,
-      behavior: "smooth"
-    });
-  }
-});
-// phần đăng nhập
-// Thêm ID cho phần form đăng nhập
-const loginForm = document.getElementById('login-form');
-
-// Thêm sự kiện submit cho form
-loginForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Ngăn chặn form submit
-
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-
-  if (/\S+@\S+\.\S+/.test(username) && password.length > 5) {
-    alert('Login successful!');
-    // Thực hiện bất kỳ hành động nào sau khi đăng nhập thành công
+Hotline: 0788612959
+Email: info@shopvnb.com
+Hợp tác kinh doanh: 0947342259 (Ms. Thảo)
+Hotline bán sỉ: 032.63.67.618 (Ms. Thảo)
+Nhượng quyền thương hiệu: 0334.741.141 (Mr. Hậu)
+Than phiền dịch vụ: 0334.741.141 (Mr. Hậu)
+          </li>
+          <div class="ft03">
+            <li>CHÍNH SÁCH</li>
+            <a href="#"> Chính sách đổi trả,hoàn tiền</a>
+            <a href="#">Chính sách bảo hành</a>
+            <a href="#">Chính sách xử lý khiếu nại</a>
+            <a href="#">Chính sách vận chuyển</a>
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính Sách Bảo Mật Thông Tin</a>
+           </div>
+        </div>
+      </footer>
+      <div class="end">
+        <div>© CÔNG TY TNHH VNB SPORTS
+          GPKD số 0314496879 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 05/07/2017
+          GĐ/Sở hữu website: Phan Lê Chi</div>
+          <img src="https://shopvnb.com/templates/images/bct.webp" alt="imj" id="imj">
+      </div>
+      <script>
+        var loginForm = document.querySelector(".login-form");
+var emailInput = document.getElementById("email");
+var passwordInput = document.getElementById("password");
+loginForm.addEventListener("submit", function(event) {
+  if (emailInput.value.endsWith("@gmail.com") && passwordInput.value.length > 5) {
+    // Login successful
+    alert("Login successful!");
   } else {
-    alert('Invalid username or password. Please try again.');
-    // Thực hiện bất kỳ hành động nào sau khi đăng nhập không thành công
+    // Login failed
+    alert("Invalid email or password!");
+    event.preventDefault(); // prevent form submission
   }
 });
+      </script>
+    <script>// nhấp chuột vào nút login và cuộn xuống phần đăng nhập
+function scrollToLoginForm() {
+  const loginForm = document.querySelector('.login-form');
+  loginForm.scrollIntoView({ behavior: 'smooth' });
+}
+    </script>
+ 
+ <script> // tạo độ bóng cho phần sale
+  // Lấy tất cả các ảnh có class là img1, img2, img3
+const images = document.querySelectorAll('.img1, .img2, .img3');
+
+// Lặp qua từng ảnh và thêm sự kiện khi hover chuột
+images.forEach(image => {
+  image.addEventListener('mouseover', function() {
+    // Thêm class 'shadow' vào ảnh khi hover chuột
+    this.classList.add('shadow');
+  });
+
+  image.addEventListener('mouseout', function() {
+    // Xóa class 'shadow' khỏi ảnh khi rời chuột
+    this.classList.remove('shadow');
+  });
+});
+
+ </script>
+<script>// nhấp vào phần giới thiệu sẽ cuộn tới phần giới thiệu
+// Lấy phần tử "a" và phần tử "span" tương ứng
+var link = document.querySelector('.ngt2');
+var target = document.querySelector('.sp3');
+
+// Thêm sự kiện "click" cho phần tử "a"
+link.addEventListener('click', function(e) {
+  // Ngăn chặn hành động mặc định của phần tử "a"
+  e.preventDefault();
+
+  // Tính toán vị trí cuộn của phần tử "span" tương ứng
+  var topOffset = target.getBoundingClientRect().top + window.pageYOffset;
+  
+  // Thay đổi vị trí cuộn của trang web để cuộn tới phần tử "span"
+  window.scrollTo({
+    top: topOffset,
+    behavior: 'smooth'
+  });
+});
+
+</script>
+
+<script>// khi nhấp vào phần saleoff sẽ cuộn tới phần saleoff
+let saleOffLink = document.querySelector(".ngt");
+
+saleOffLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  let saleOffSection = document.querySelector(".sp1");
+  saleOffSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+});
+</script>
+<script>// phần tin tức
+// Lấy phần tử <a> theo class name "ngt1"
+  var link = document.querySelector('.ngt1');
+
+// Lắng nghe sự kiện click trên phần tử <a>
+link.addEventListener('click', function(event) {
+  event.preventDefault(); // Ngăn chặn hành động mặc định của phần tử <a>
+
+  // Lấy phần tử <span> theo class name "sp2"
+  var target = document.querySelector('.sp2');
+
+  // Cuộn đến phần tử <span>
+  target.scrollIntoView({behavior: 'smooth'});
+});
+
+</script>
+<script>
+  const ngt0 = document.querySelector('.ngt0');
+
+ngt0.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 </script>
 </body>
 </html>
